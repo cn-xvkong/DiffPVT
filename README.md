@@ -1,2 +1,3 @@
 # DiffPVT
-DiffPVT:Information Filtering Based Diffusion Model with PVT for Medical Image Segmentation
+This repo contains the official PyTorch code for DiffPVT.      
+Upon acceptance of the paper, we plan to release the complete code, along with comprehensive documentation.Please wait...
