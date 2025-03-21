@@ -3,14 +3,14 @@
 ![image](https://github.com/user-attachments/assets/46adbfaa-b74d-4a63-89c9-a9ebbad059d0)
 
 ## ⭐Implementation details
-### Environment
+### -Environment
 ```
 conda create -n diffpvt python=3.9 -y
 conda activate diffpvt
 pip install -r requirements.txt
 ```
 
-### Training
+### -Training
 ```
 python train.py
 python test.py
