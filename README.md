@@ -1,11 +1,29 @@
-# DiffPVT:Information Filtering Based Diffusion Model with PVT for Medical Image Segmentation
-## Introduction
-We construct the diffusion model with the Pyramid Vision Transformer architecture.
-## Experimental Environment
-we use Ubuntu 18.04, Python 3.7, Pytorch 1.12.0.
-## Abstract
-Diffusion probabilistic model, as a generative model, has gained wide attention in image processing tasks, and its powerful image generation capability has made it flourish in the field of computer vision. In recent years, it has achieved excellent performance in the field of medical image segmentation, and nowadays denoising diffusion models supported by network architectures such as U-Net and Transformer are all successfully applied in medical image segmentation tasks.In order to explore the potential of pyramid structure in diffusion modelling, we propose a denoising diffusion model, DiffPVT, which uses the PVT as the network architecture.In order to ensure the diffusion model's compatibility with the pyramid vision transformer(PVT), we use a dual-encoder architecture to convey the spatial information to ensure the effectiveness of the diffusion model in the denoising stage, while proposing a novel decoder structure to further enrich the reconstruction process, in which we retain the information embedding of the time steps in the second layer encoding stage while applying its extension to the decoder part. We combine the denoising task of the diffusion model with the critical need of the edge detection task in the field of medical image segmentation, and propose Dual-Mode Information Filtering Module(DMIFM) and use it as a holistic structure to process the requirements of multiple types of tasks in parallel, thus enhancing the denoising process of the diffusion model and enriching the edge information of the feature images. We conduct extensive experiments on four public datasets and confirm that DiffPVT has excellent segmentation level in the field of medical image segmentation.
-## Keywords
-Denoising diffusion model  Pyramid vision transformer  Dual-Mode information filtering  Squeeze-Excitation residual fusion decoder  Medical image segmentation
-## Codes
-We would upload our code here as soon as possible, please wait.
+# [DiffPVT:Information Filtering Based Diffusion Model with PVT for Medical Image Segmentation](https://link.springer.com/article/10.1007/s13042-024-02519-3)
+ If you like our project, please give us a star ⭐.
+![image](https://github.com/user-attachments/assets/46adbfaa-b74d-4a63-89c9-a9ebbad059d0)
+
+## ⭐Implementation details
+### Enviroment
+```python
+conda create -n diffpvt python=3.9 -y
+conda activate diffpvt
+pip install -r requirements.txt
+
+### Training
+```python
+python train.py
+python test.py
+
+## ⭐Acknowledgement
+This repo benefits from awesome works of [DiffUNet](https://arxiv.org/abs/2303.10326), [PVTv2](https://link.springer.com/article/10.1007/s41095-022-0274-8), [AgentAttention](https://link.springer.com/chapter/10.1007/978-3-031-72973-7_8). Please also consider citing them.
+
+## ⭐Citation
+```python
+@article{wang2025diffpvt,
+  title={Diffpvt: information filtering based diffusion model with PVT for medical image segmentation},
+  author={Wang, Chengming and Yuan, Genji and Li, Mengjun and Li, Jinjiang},
+  journal={International Journal of Machine Learning and Cybernetics},
+  pages={1--17},
+  year={2025},
+  publisher={Springer}
+}
