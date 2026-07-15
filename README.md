@@ -12,14 +12,6 @@ pip install -r requirements.txt
 ## 🔑	Pre-trained model
 Download pretrained model: [pvt_v2_b2.pth](https://github.com/whai362/PVT).
 
-## ✏️Training
-```
-python train.py
-python test.py
-```
-
-# ♥️Acknowledgement
-This repo benefits from awesome works of [DiffUNet](https://arxiv.org/abs/2303.10326), [PVTv2](https://link.springer.com/article/10.1007/s41095-022-0274-8), [AgentAttention](https://link.springer.com/chapter/10.1007/978-3-031-72973-7_8). Please also consider citing them.
 
 # 📜	Citation
 ```
